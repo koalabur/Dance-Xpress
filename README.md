@@ -2,6 +2,7 @@
 
 - [Nuxt 3](https://nuxt.com/)
 - [GSAP](https://greensock.com/)
+- [Contentful](https://www.contentful.com/)
 - [Web3Forms](https://web3forms.com/)
 - [Vercel](https://vercel.com/)
 
