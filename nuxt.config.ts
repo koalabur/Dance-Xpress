@@ -55,7 +55,14 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         value: {
-          "img-src": ["'self'", "data:", "ctfassets.net", "*.ctfassets.net"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "ctfassets.net",
+            "*.ctfassets.net",
+            "vercel.com",
+            "*.vercel.com",
+          ],
         },
         route: "/**",
       },
