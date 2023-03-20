@@ -537,7 +537,7 @@ async function submitForm() {
       body: JSON.stringify({
         access_key: config.public.WEB3FORMS_ACCESS_KEY,
         botcheck: register.value.botcheck,
-        subject: "New Child Registration",
+        subject: `New Child Registration from ${register.value.parentGuardianName}`,
         replyto: register.value.parentGuardianEmail,
         from_name: "Dancexpresslv.com",
         "Parent/ Guardian Name": register.value.parentGuardianName,
