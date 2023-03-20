@@ -46,9 +46,21 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxt/image-edge", "@pinia/nuxt", "@vueuse/nuxt"],
+  modules: ["@nuxt/image-edge", "@pinia/nuxt", "@vueuse/nuxt", "nuxt-security"],
   image: { contentful: {} },
   build: {
     transpile: ["gsap"],
+  },
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        value: {
+          "img-src": ["'self'", "data:", "ctfassets.net", "*.ctfassets.net"],
+        },
+        route: "/**",
+      },
+      crossOriginEmbedderPolicy: { value: "unsafe-none", route: "/**" },
+    },
+    xssValidator: { value: {}, route: "", throwError: true },
   },
 });
