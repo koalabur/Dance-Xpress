@@ -1036,6 +1036,7 @@ main {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  overflow-x: hidden;
 
   @include laptop-lg {
     display: flex;
@@ -1083,7 +1084,6 @@ main {
     margin-left: 5px;
     margin-top: 0;
     top: 100px;
-    margin-top: 0;
     gap: 10px;
   }
 
