@@ -1020,7 +1020,6 @@ onMounted(() => {
 
     &-img {
       border-radius: 12px;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 
       @include laptop {
         margin-bottom: 15px;
