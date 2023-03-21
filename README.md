@@ -1,10 +1,22 @@
 # What's Going On?
 
-- [Nuxt 3](https://nuxt.com/)
-- [GSAP](https://greensock.com/)
-- [Contentful](https://www.contentful.com/)
-- [Web3Forms](https://web3forms.com/)
-- [Vercel](https://vercel.com/)
+![alt text](https://lh4.googleusercontent.com/jaP_gX3L1VixTN7uQYN8or2XvOitlyiBVAFhhY9qZqmPM87oj-r3k2LnlH47vh-NvHg=w2400 "Nuxt 3") [Nuxt 3](https://nuxt.com/)
+
+
+![alt text](https://lh6.googleusercontent.com/aNQxUtMEztBjZePrAkL7KPWSXJazMGwnxMDXazxDO4BNh-4aw6YwkvtZGm-oR07mih8=w2400 "GSAP") [GSAP](https://greensock.com/)
+
+
+![alt text](https://lh6.googleusercontent.com/FU5h_Q0As38kMoqvxtWEmzK10JkainV6PdkepauYdChfg4V_vFi4qpqc-hQnAch1PsU=w2400 "Contentful") [Contentful](https://www.contentful.com/)
+
+
+![alt text](https://lh5.googleusercontent.com/IGOqeM48w__u3KcTqa9VAc2yDxsbBtpnlK622ywOSp3-2cfcQ5fJsxuO5WhGpPRGROc=w2400 "Web3Forms") [Web3Forms](https://web3forms.com/)
+
+
+![alt text](https://lh4.googleusercontent.com/GP9NAJSm6k_FBiCd4C6PWWmAnKYb0EAf8bMfQ4eWE1UocWHM-anzsQaxESSaHu9064s=w2400 "Vercel") [Vercel](https://vercel.com/)
+
+
+![alt text](https://lh5.googleusercontent.com/d0B-kieK-PT6SPqZCWnjk0JZlUvQIb-a4779QfDMBzWQKnFlywmB6bAPlyhqAxpXw0s=w2400 "Nuxt-Security") [Nuxt-Security](https://nuxt-security.vercel.app/)
+
 
 Designed and developed by [Koalabur (Cameron)](https://github.com/koalabur) :D
 
