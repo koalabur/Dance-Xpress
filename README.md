@@ -18,7 +18,9 @@
 ![alt text](https://lh5.googleusercontent.com/d0B-kieK-PT6SPqZCWnjk0JZlUvQIb-a4779QfDMBzWQKnFlywmB6bAPlyhqAxpXw0s=w2400 "Nuxt-Security") [Nuxt-Security](https://nuxt-security.vercel.app/)
 
 
-Designed and developed by [Koalabur (Cameron)](https://github.com/koalabur) :D
+Designed and developed by [Koalabur (Cameron)](https://github.com/koalabur) 
+
+---
 
 # Nuxt 3 Minimal Starter
 
