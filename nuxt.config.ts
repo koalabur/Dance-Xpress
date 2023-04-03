@@ -82,4 +82,31 @@ export default defineNuxtConfig({
     },
     xssValidator: { value: {}, route: "", throwError: true },
   },
+  routeRules: {
+    "/assets/**": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/images/**": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/_nuxt/**": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/**/*.js": { headers: { "Cache-Control": "max-age=31536000, immutable" } },
+    "/**/*.css": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/**/*.json": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/**/*.html": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/**/*.xml": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+    "/**/*.svg": {
+      headers: { "Cache-Control": "max-age=31536000, immutable" },
+    },
+  },
 });
