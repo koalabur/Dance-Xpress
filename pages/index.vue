@@ -265,7 +265,7 @@ onMounted(() => {
         &-btn {
           font-family: $subtitle-font;
           font-size: #{fluid(24px, 36px)};
-          background: $dark-pink;
+          background: $darker-pink;
           border-radius: 12px;
           color: $light-pink;
           display: block;
