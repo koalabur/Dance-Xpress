@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-security",
     "nuxt-simple-sitemap",
+    "@nuxtjs/robots",
   ],
   image: { contentful: {} },
   build: {
