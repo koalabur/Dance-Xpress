@@ -52,8 +52,8 @@ if (process.client) {
 }
 
 useSeoMeta({
-  title: "Dance Xpress",
-  ogTitle: "Dance Xpress",
+  title: "Dance Xpress - Las Vegas",
+  ogTitle: "Dance Xpress - Las Vegas",
   description:
     "Dance Xpress provides an outlet for youth girls, ages 5-14, to express their love of liberal arts, DANCE!",
   ogDescription:
