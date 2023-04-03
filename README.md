@@ -35,7 +35,7 @@ npm install
 pnpm install
 ```
 
-Duplicate the `robots.example.ts` and rename it to `robots.config.ts`. The content of the files do not need to be changed.
+Duplicate the `robots.example.ts` and rename it to `robots.config.ts`. The contents of the file do not need to be changed.
 
 ## Development Server
 
