@@ -1,4 +1,4 @@
-// Change to robots.config.ts for development
+// Dupe and change to robots.config.ts for development
 
 export default [
   { UserAgent: "*" },
