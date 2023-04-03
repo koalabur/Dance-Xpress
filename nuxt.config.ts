@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       meta: [
@@ -34,6 +37,7 @@ export default defineNuxtConfig({
       CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
       CONTENTFUL_CDA: process.env.CONTENTFUL_CDA,
       WEB3FORMS_ACCESS_KEY: process.env.WEB3FORMS_ACCESS_KEY,
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://dancexpresslv.com",
     },
   },
   css: ["@/assets/styles/global.scss"],
@@ -46,7 +50,14 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxt/image-edge", "@pinia/nuxt", "@vueuse/nuxt", "nuxt-security"],
+  modules: [
+    "@nuxt/image-edge",
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
+    "nuxt-security",
+    "nuxt-simple-sitemap",
+    "@nuxtjs/robots",
+  ],
   image: { contentful: {} },
   build: {
     transpile: ["gsap"],
