@@ -94,6 +94,16 @@ export default defineNuxtConfig({
           "cache-control": `public,max-age=31536000,s-maxage=31536000`,
         },
       },
+      "https://images.ctfassets.net/**": {
+        headers: {
+          "cache-control": `public,max-age=31536000,s-maxage=31536000`,
+        },
+      },
+      "data:image/**": {
+        headers: {
+          "cache-control": `public,max-age=31536000,s-maxage=31536000`,
+        },
+      },
     },
   },
 });
