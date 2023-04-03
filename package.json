@@ -15,6 +15,7 @@
     "@vueuse/core": "^9.13.0",
     "@vueuse/nuxt": "^9.13.0",
     "nuxt": "^3.3.1",
+    "nuxt-schema-org": "^2.1.2",
     "nuxt-security": "^0.12.0",
     "nuxt-simple-sitemap": "^2.4.1",
     "sass": "^1.59.3",
