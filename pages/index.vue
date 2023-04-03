@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="home">
-      <nuxt-img
+      <nuxt-picture
         class="home__bg"
         provider="contentful"
         :src="pageContent?.backgroundImage.url"

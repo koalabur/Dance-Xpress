@@ -8,7 +8,7 @@
     <!-- DIRECTOR -->
     <section id="meet-the-director" ref="director" class="director">
       <div class="director__content">
-        <nuxt-img
+        <nuxt-picture
           provider="contentful"
           class="director__content-img"
           :src="pageContentA?.image.url"
@@ -37,7 +37,7 @@
       <div class="about__section">
         <!-- row a -->
         <div class="about__section-row about__section-row--upper">
-          <nuxt-img
+          <nuxt-picture
             class="about__section-row-img"
             :src="pageContentB?.imageRowA.url"
             alt="Dance Xpress Girls Holding Banner at Vegas Crown"
@@ -70,7 +70,7 @@
         <div
           class="about__section-row about__section-row--upper about__section-row--inverted about__section-row--nogap"
         >
-          <nuxt-img
+          <nuxt-picture
             class="about__section-row-img"
             :src="pageContentB?.imageRowB.url"
             alt="Dance Xpress Girls Posing at Vegas Crown"
