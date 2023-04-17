@@ -68,7 +68,7 @@
         </div>
         <!-- row b -->
         <div
-          class="about__section-row about__section-row--upper about__section-row--inverted about__section-row--nogap"
+          class="about__section-row about__section-row--upper about__section-row--inverted"
         >
           <nuxt-picture
             class="about__section-row-img"
