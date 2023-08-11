@@ -1,69 +1,31 @@
 <template>
   <main>
     <section class="banner">
-      <NuxtImg
-        v-if="!isMobile"
-        class="banner__img"
-        :src="pageContent?.banner.url"
-        alt="Registration Page Banner"
-        width="1920"
-        height="720"
-        preload
-      />
-      <NuxtImg
-        v-if="isMobile"
-        class="banner__img"
-        :src="pageContent?.mobileBanner.url"
-        alt="Registration Page Banner"
-        width="768"
-        height="720"
-        preload
-      />
+      <NuxtImg v-if="!isMobile" class="banner__img" :src="pageContent?.banner.url" alt="Registration Page Banner"
+        width="1920" height="720" preload />
+      <NuxtImg v-if="isMobile" class="banner__img" :src="pageContent?.mobileBanner.url" alt="Registration Page Banner"
+        width="768" height="720" preload />
       <div class="banner__foreground"></div>
       <div class="banner__content">
         <!-- LOCATION -->
         <div class="banner__content-row">
-          <svg
-            class="banner__content-row-icon"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 64.4 95.1"
-            style="enable-background: new 0 0 64.4 95.1"
-            xml:space="preserve"
-          >
-            <path
-              class="st0"
-              d="M5250.6,2407.9c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.3c0.6,0,1-0.4,1-1s-0.4-1-1-1H5250.6z M5254.9,2411.2h-4.3c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.3c0.6,0,1-0.4,1-1S5255.5,2411.2,5254.9,2411.2z M5254.9,2414.6h-4.3c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.3c0.6,0,1-0.4,1-1C5255.9,2415.1,5255.5,2414.6,5254.9,2414.6z M32.2,0.1C14.4,0.1,0,14.5,0,32.3c0,20.1,19.1,48.5,27.8,60.6c2.2,3,6.5,3,8.7,0c8.8-12.1,27.9-40.5,27.9-60.6C64.4,14.5,50,0.1,32.2,0.1z M32.4,47.7c-8.6,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6S48,23.5,48,32.1C48,40.8,41,47.7,32.4,47.7z"
-            />
+          <svg class="banner__content-row-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64.4 95.1"
+            style="enable-background: new 0 0 64.4 95.1" xml:space="preserve">
+            <path class="st0"
+              d="M5250.6,2407.9c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.3c0.6,0,1-0.4,1-1s-0.4-1-1-1H5250.6z M5254.9,2411.2h-4.3c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.3c0.6,0,1-0.4,1-1S5255.5,2411.2,5254.9,2411.2z M5254.9,2414.6h-4.3c-0.6,0-1,0.4-1,1s0.4,1,1,1h4.3c0.6,0,1-0.4,1-1C5255.9,2415.1,5255.5,2414.6,5254.9,2414.6z M32.2,0.1C14.4,0.1,0,14.5,0,32.3c0,20.1,19.1,48.5,27.8,60.6c2.2,3,6.5,3,8.7,0c8.8-12.1,27.9-40.5,27.9-60.6C64.4,14.5,50,0.1,32.2,0.1z M32.4,47.7c-8.6,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6S48,23.5,48,32.1C48,40.8,41,47.7,32.4,47.7z" />
           </svg>
 
           <p class="banner__content-row-body">
-            <strong>Location: </strong
-            ><a
-              class="banner__content-row-body-link"
-              :href="pageContent?.location.url"
-              target="_blank"
-              rel="noopener"
-              >{{ pageContent?.location.text }}</a
-            >
+            <strong>Location: </strong><a class="banner__content-row-body-link" :href="pageContent?.location.url"
+              target="_blank" rel="noopener">{{ pageContent?.location.text }}</a>
           </p>
         </div>
         <!-- IMPORTANT -->
         <div class="banner__content-row banner__content-row--important">
-          <svg
-            class="banner__content-row-icon"
-            viewBox="0 0 42 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42ZM21 38.5C30.665 38.5 38.5 30.665 38.5 21C38.5 11.335 30.665 3.5 21 3.5C11.335 3.5 3.5 11.335 3.5 21C3.5 30.665 11.335 38.5 21 38.5ZM19.25 9.19034C19.25 8.4639 19.8437 7.875 20.5632 7.875H21.4368C22.162 7.875 22.75 8.45726 22.75 9.19034V24.0597C22.75 24.7861 22.1563 25.375 21.4368 25.375H20.5632C19.838 25.375 19.25 24.7927 19.25 24.0597V9.19034ZM21 34.125C19.5503 34.125 18.375 32.9497 18.375 31.5C18.375 30.0503 19.5503 28.875 21 28.875C22.4497 28.875 23.625 30.0503 23.625 31.5C23.625 32.9497 22.4497 34.125 21 34.125Z"
-            />
+          <svg class="banner__content-row-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42ZM21 38.5C30.665 38.5 38.5 30.665 38.5 21C38.5 11.335 30.665 3.5 21 3.5C11.335 3.5 3.5 11.335 3.5 21C3.5 30.665 11.335 38.5 21 38.5ZM19.25 9.19034C19.25 8.4639 19.8437 7.875 20.5632 7.875H21.4368C22.162 7.875 22.75 8.45726 22.75 9.19034V24.0597C22.75 24.7861 22.1563 25.375 21.4368 25.375H20.5632C19.838 25.375 19.25 24.7927 19.25 24.0597V9.19034ZM21 34.125C19.5503 34.125 18.375 32.9497 18.375 31.5C18.375 30.0503 19.5503 28.875 21 28.875C22.4497 28.875 23.625 30.0503 23.625 31.5C23.625 32.9497 22.4497 34.125 21 34.125Z" />
           </svg>
 
           <p class="banner__content-row-body">
@@ -76,62 +38,31 @@
     <section v-if="!success" class="register">
       <h1 class="register__title">Register Your Child</h1>
       <form class="register__form" @submit.prevent="submitForm">
-        <input
-          type="checkbox"
-          name="botcheck"
-          class="hidden"
-          v-model="register.botcheck"
-          style="display: none"
-        />
+        <input type="checkbox" name="botcheck" class="hidden" v-model="register.botcheck" style="display: none" />
         <div class="register__form-row">
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="parentGuardianName"
-              >Parent/ Guardian Full Name</label
-            >
-            <input
-              id="parentGuardianName"
-              class="register__form-row-col-input"
-              v-model.lazy="register.parentGuardianName"
-            />
+            <label class="register__form-row-col-label" for="parentGuardianName">Parent/ Guardian Full Name</label>
+            <input id="parentGuardianName" class="register__form-row-col-input"
+              v-model.lazy="register.parentGuardianName" />
           </div>
           <div class="register__form-row-col">
-            <label
-              class="register__form-row-col-label"
-              for="parentGuardianEmail"
-              >Parent/ Guardian Email</label
-            >
-            <input
-              id="parentGuardianEmail"
-              class="register__form-row-col-input"
-              v-model.lazy="register.parentGuardianEmail"
-            />
+            <label class="register__form-row-col-label" for="parentGuardianEmail">Parent/ Guardian Email</label>
+            <input id="parentGuardianEmail" class="register__form-row-col-input"
+              v-model.lazy="register.parentGuardianEmail" />
           </div>
         </div>
         <div class="register__form-row">
           <div class="register__form-row-col">
-            <label
-              class="register__form-row-col-label"
-              for="parentGuardianNumber"
-              >Parent/ Guardian Number</label
-            >
-            <input
-              id="parentGuardianNumber"
-              class="register__form-row-col-input"
-              type="number"
-              v-model.lazy="register.parentGuardianNumber"
-            />
+            <label class="register__form-row-col-label" for="parentGuardianNumber">Parent/ Guardian Number</label>
+            <input id="parentGuardianNumber" class="register__form-row-col-input" type="number"
+              v-model.lazy="register.parentGuardianNumber" />
           </div>
         </div>
         <div class="register__form-row">
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="numberOfChildren"
-              >How Many Children Are You Registering?</label
-            >
-            <select
-              id="numberOfChildren"
-              class="register__form-row-col-input"
-              v-model="register.numberOfChildren"
-            >
+            <label class="register__form-row-col-label" for="numberOfChildren">How Many Children Are You
+              Registering?</label>
+            <select id="numberOfChildren" class="register__form-row-col-input" v-model="register.numberOfChildren">
               <option disabled value="">Please select a number.</option>
               <option>1</option>
               <option>2</option>
@@ -141,89 +72,42 @@
         </div>
         <div v-if="children >= 1" class="register__form-row">
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="child1FullName"
-              >Child 1 Full Name</label
-            >
-            <input
-              id="child1FullName"
-              class="register__form-row-col-input"
-              v-model.lazy="register.child1FullName"
-            />
+            <label class="register__form-row-col-label" for="child1FullName">Child 1 Full Name</label>
+            <input id="child1FullName" class="register__form-row-col-input" v-model.lazy="register.child1FullName" />
           </div>
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="child1Age"
-              >Child 1 Age</label
-            >
-            <input
-              id="child1Age"
-              class="register__form-row-col-input"
-              type="number"
-              v-model.lazy="register.child1Age"
-            />
+            <label class="register__form-row-col-label" for="child1Age">Child 1 Age</label>
+            <input id="child1Age" class="register__form-row-col-input" type="number" v-model.lazy="register.child1Age" />
           </div>
         </div>
         <div v-if="children >= 2" class="register__form-row">
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="child2FullName"
-              >Child 2 Full Name</label
-            >
-            <input
-              id="child2FullName"
-              class="register__form-row-col-input"
-              v-model.lazy="register.child2FullName"
-            />
+            <label class="register__form-row-col-label" for="child2FullName">Child 2 Full Name</label>
+            <input id="child2FullName" class="register__form-row-col-input" v-model.lazy="register.child2FullName" />
           </div>
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="child2Age"
-              >Child 2 Age</label
-            >
-            <input
-              id="child2Age"
-              class="register__form-row-col-input"
-              type="number"
-              v-model.lazy="register.child2Age"
-            />
+            <label class="register__form-row-col-label" for="child2Age">Child 2 Age</label>
+            <input id="child2Age" class="register__form-row-col-input" type="number" v-model.lazy="register.child2Age" />
           </div>
         </div>
         <div v-if="children == 3" class="register__form-row">
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="child3FullName"
-              >Child 3 Full Name</label
-            >
-            <input
-              id="child3FullName"
-              class="register__form-row-col-input"
-              v-model.lazy="register.child3FullName"
-            />
+            <label class="register__form-row-col-label" for="child3FullName">Child 3 Full Name</label>
+            <input id="child3FullName" class="register__form-row-col-input" v-model.lazy="register.child3FullName" />
           </div>
           <div class="register__form-row-col">
-            <label class="register__form-row-col-label" for="child3Age"
-              >Child 3 Age</label
-            >
-            <input
-              id="child3Age"
-              class="register__form-row-col-input"
-              type="number"
-              v-model.lazy="register.child3Age"
-            />
+            <label class="register__form-row-col-label" for="child3Age">Child 3 Age</label>
+            <input id="child3Age" class="register__form-row-col-input" type="number" v-model.lazy="register.child3Age" />
           </div>
         </div>
         <div class="register__form-row">
           <div class="register__form-row-col">
             <div class="register__form-row-col-checkbox">
-              <input
-                id="childFee"
-                class="register__form-row-col-checkbox-input"
-                type="checkbox"
-                v-model="register.childFee"
-              />
-              <label
-                for="childFee"
-                class="register__form-row-col-checkbox-label"
-              >
-                I understand that there is a $20 per child fee. I will not be
-                charged when submitting this form but will be charged a one-time
-                registration fee when I arrive.
+              <input id="childFee" class="register__form-row-col-checkbox-input" type="checkbox"
+                v-model="register.childFee" />
+              <label for="childFee" class="register__form-row-col-checkbox-label">
+                There is a $20 per child non-refundable registration fee due once you have registered your child. You will
+                receive an email with details submitting your payment.
               </label>
             </div>
           </div>
@@ -231,24 +115,13 @@
         <div class="register__form-row">
           <div class="register__form-row-col">
             <div class="register__form-row-col-checkbox">
-              <input
-                id="readAboutPage"
-                class="register__form-row-col-checkbox-input"
-                type="checkbox"
-                v-model="register.readAboutPage"
-              />
-              <label
-                for="readAboutPage"
-                class="register__form-row-col-checkbox-label"
-              >
+              <input id="readAboutPage" class="register__form-row-col-checkbox-input" type="checkbox"
+                v-model="register.readAboutPage" />
+              <label for="readAboutPage" class="register__form-row-col-checkbox-label">
                 I have read over the fees related to the program and other
                 information on the
-                <NuxtLink
-                  class="register__form-row-col-checkbox-label-link"
-                  to="/about#about-the-program"
-                  target="_blank"
-                  >about page.</NuxtLink
-                >
+                <NuxtLink class="register__form-row-col-checkbox-label-link" to="/about#about-the-program"
+                  target="_blank">about page.</NuxtLink>
               </label>
             </div>
           </div>
@@ -333,12 +206,8 @@
           <p class="success__form-row-title">
             I have read over the fees related to the program and other
             information on the
-            <NuxtLink
-              class="success__form-row-title-link"
-              to="/about#about-the-program"
-              target="_blank"
-              >about page.</NuxtLink
-            >
+            <NuxtLink class="success__form-row-title-link" to="/about#about-the-program" target="_blank">about page.
+            </NuxtLink>
           </p>
           <p class="success__form-row-info">Accepted</p>
         </div>
@@ -634,11 +503,9 @@ const isMobile = useMediaQuery("(max-width: 768px)");
   }
 
   &__foreground {
-    background: linear-gradient(
-      180deg,
-      rgba(217, 217, 217, 0) 0%,
-      #ffb6c1 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(217, 217, 217, 0) 0%,
+        #ffb6c1 100%);
     width: 100%;
     height: 100%;
     grid-area: 1 / 1 / 2 / 2;
