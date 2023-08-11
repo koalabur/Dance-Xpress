@@ -106,8 +106,8 @@
               <input id="childFee" class="register__form-row-col-checkbox-input" type="checkbox"
                 v-model="register.childFee" />
               <label for="childFee" class="register__form-row-col-checkbox-label">
-                There is a $20 per child non-refundable registration fee due once you have registered your child. You will
-                receive an email with details submitting your payment.
+                I understand that there is a $20 per child non-refundable registration fee due once I have registered my
+                child. An email will be sent to me advising details on submitting payment.
               </label>
             </div>
           </div>
@@ -196,9 +196,8 @@
         </div>
         <div class="success__form-row">
           <p class="success__form-row-title">
-            I understand that there is a $20 per child fee. I will not be
-            charged when submitting this form but will be charged a one-time
-            registration fee when I arrive.
+            I understand that there is a $20 per child non-refundable registration fee due once I have registered my
+            child. An email will be sent to me advising details on submitting payment.
           </p>
           <p class="success__form-row-info">Accepted</p>
         </div>
@@ -419,7 +418,7 @@ async function submitForm() {
         "Child 2 Age": register.value.child2Age,
         "Child 3 Full Name": register.value.child3FullName,
         "Child 3 Age": register.value.child3Age,
-        "I understand there is a $20 per child fee": register.value.childFee,
+        "I understand that there is a $20 per child non-refundable registration fee due once I have registered my child.  An email will be sent to me advising details on submitting payment.": register.value.childFee,
         "I have read the about page": register.value.readAboutPage,
       }),
     });
