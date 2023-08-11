@@ -106,8 +106,8 @@
               <input id="childFee" class="register__form-row-col-checkbox-input" type="checkbox"
                 v-model="register.childFee" />
               <label for="childFee" class="register__form-row-col-checkbox-label">
-                There is a $20 per child non-refundable registration fee due once you have registered your child. You will
-                receive an email with details submitting your payment.
+                I understand that there is a $20 per child non-refundable registration fee due once I have registered my
+                child. An email will be sent to me advising details on submitting payment.
               </label>
             </div>
           </div>
