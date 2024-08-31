@@ -196,8 +196,7 @@
         </div>
         <div class="success__form-row">
           <p class="success__form-row-title">
-            I understand that there is a $20 per child non-refundable registration fee due once I have registered my
-            child. An email will be sent to me advising details on submitting payment.
+            I understand that there is a per child non-refundable registration fee due once I have registered my child. This fee is highlighted above the form. An email will be sent to me advising details on submitting payment. 
           </p>
           <p class="success__form-row-info">Accepted</p>
         </div>
@@ -418,7 +417,7 @@ async function submitForm() {
         "Child 2 Age": register.value.child2Age,
         "Child 3 Full Name": register.value.child3FullName,
         "Child 3 Age": register.value.child3Age,
-        "I understand that there is a $20 per child non-refundable registration fee due once I have registered my child.  An email will be sent to me advising details on submitting payment.": register.value.childFee,
+        "I understand that there is a per child non-refundable registration fee due once I have registered my child. This fee is highlighted above the form. An email will be sent to me advising details on submitting payment.": register.value.childFee,
         "I have read the about page": register.value.readAboutPage,
       }),
     });
